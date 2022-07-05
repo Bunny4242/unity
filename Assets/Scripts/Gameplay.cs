@@ -19,7 +19,20 @@ public class Gameplay : MonoBehaviour
                 {
                     hit.collider.gameObject.SetActive(false);
                 }
+
+                if (hit.collider.gameObject.name.CompareTo("GreenSphere") == 1)
+                { 
+                    hit.collider.gameObject.SetActive(false);
+                }
+
+                if (hit.collider.gameObject.name.CompareTo("BlueSphere") == 1)
+                {
+                    hit.collider.gameObject.SetActive(false);
+                }
+
             }
+
+
         }
         
     }
